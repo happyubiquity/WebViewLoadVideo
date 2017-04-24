@@ -14,6 +14,7 @@
 		81950EC41EADD89A00D051CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81950EC31EADD89A00D051CB /* Assets.xcassets */; };
 		81950EC71EADD89A00D051CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81950EC51EADD89A00D051CB /* LaunchScreen.storyboard */; };
 		81950ED21EADD89A00D051CB /* WebViewLoadVideoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 81950ED11EADD89A00D051CB /* WebViewLoadVideoTests.m */; };
+		81950EDE1EADE71B00D051CB /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81950EDD1EADE71B00D051CB /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		81950ECD1EADD89A00D051CB /* WebViewLoadVideoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebViewLoadVideoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81950ED11EADD89A00D051CB /* WebViewLoadVideoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewLoadVideoTests.m; sourceTree = "<group>"; };
 		81950ED31EADD89A00D051CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81950EDD1EADE71B00D051CB /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81950EDE1EADE71B00D051CB /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +69,7 @@
 				81950EB61EADD89A00D051CB /* WebViewLoadVideo */,
 				81950ED01EADD89A00D051CB /* WebViewLoadVideoTests */,
 				81950EB51EADD89A00D051CB /* Products */,
+				81950EDC1EADE71A00D051CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +113,14 @@
 				81950ED31EADD89A00D051CB /* Info.plist */,
 			);
 			path = WebViewLoadVideoTests;
+			sourceTree = "<group>";
+		};
+		81950EDC1EADE71A00D051CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81950EDD1EADE71B00D051CB /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +367,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AN74G8J783;
 				INFOPLIST_FILE = WebViewLoadVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangli.www.WebViewLoadVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -367,6 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AN74G8J783;
 				INFOPLIST_FILE = WebViewLoadVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wangli.www.WebViewLoadVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
